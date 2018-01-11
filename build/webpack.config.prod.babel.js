@@ -11,11 +11,10 @@ module.exports = {
     context: path.resolve(__dirname, '../src'),
     entry: [
         'babel-polyfill',
-        'react-hot-loader/patch',
         path.join(__dirname, '../src/app.js')
     ],
     output: {
-        filename: '[name].js',
+        filename: '[name].[contenthash].js',
         path: path.join(__dirname, '../dist'),
         publicPath: '/'
     },
@@ -55,7 +54,8 @@ module.exports = {
             modules: path.resolve(__dirname, '../src/modules'),
             reduxes: path.resolve(__dirname, '../src/reduxes'),
             utils: path.resolve(__dirname, '../src/utils'),
-            routers: path.resolve(__dirname, '../src/routers')
+            routers: path.resolve(__dirname, '../src/routers'),
+            assets: path.resolve(__dirname, '../src/assets')
         }
     },
     plugins: [
