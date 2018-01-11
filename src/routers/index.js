@@ -15,7 +15,7 @@ export default class Routers extends Component {
                 <Switch>
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/:modules/:page" component={RouterPage} />
-                    <Route path="/" component={Login} />
+                    <Route exact path="/" component={Login} />
                 </Switch>
             </BrowserRouter>
         )

@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import Routers from 'modules/router'
 import propTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 class RouterPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
 
         }
+    }
+    componentWillReceiveProps(nextProps) {
+        this.loadComponent(nextProps)
     }
     componentWillMount() {
         this.loadComponent(this.props)
@@ -18,11 +22,6 @@ class RouterPage extends Component {
         const routePage = params.page.toLowerCase()
         const routeModule = tempModule.shift().toUpperCase() + tempModule.join('')
         try {
-            if (Routers[`${routeModule}Route`] === undefined) { // url第一个反斜杠后面没有匹配
-                this.setState({
-                    is404: true
-                })
-            }
             let route
             outer:
             for (var i = 0; Routers[`${routeModule}Route`].actions.length; i++) {
@@ -49,14 +48,7 @@ class RouterPage extends Component {
                     }
                 }
             }
-            console.log(route)
-            if (route === undefined) { // url第一个反斜杠匹配上了 第二个没有匹配上
-                this.setState({
-                    is404: true
-                })
-            }
             const component = await route.ensure()
-            console.log(component)
             this.setState({
                 component: React.createElement(component.default, { match, history, params: location.state })
             })
@@ -69,7 +61,13 @@ class RouterPage extends Component {
     }
     render() {
         return (
-            <div>cococo{this.state.component}</div>
+            <div>
+                <div>
+                    <Link to="/home/home">home</Link><br />
+                    <Link to="/home/dashboard">dashboard</Link><br />
+                    <Link to="/login">login</Link><br />
+                </div>
+                {this.state.component}</div>
         )
     }
 }

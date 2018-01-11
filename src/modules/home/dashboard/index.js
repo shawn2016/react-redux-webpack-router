@@ -1,10 +1,11 @@
 import React from 'react'
-
+import home_bg from 'assets/images/home_bg.jpg'
 class Dashboard extends React.Component {
     render() {
         return (
-            <div>dashboard
-                <button className="rob-btn rob-btn-danger rob-btn-circle " type="button">查询</button>
+            <div>
+                Dashboard
+                <img src={home_bg} />
             </div>
         )
     }
