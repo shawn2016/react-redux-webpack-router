@@ -1,3 +1,4 @@
+/*eslint-disable */
 import React, { Component } from 'react'
 import Routers from 'modules/router'
 import propTypes from 'prop-types'

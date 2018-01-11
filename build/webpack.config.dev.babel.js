@@ -20,33 +20,38 @@ module.exports = {
     },
     devtool: "source-map",
     module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            }, {
-                test: /\.scss$/,
-                use: extractSass.extract({
-                    use: [{
-                        loader: "css-loader"
-                    }, {
-                        loader: "sass-loader"
-                    }],
-                    // use style-loader in development 
-                    fallback: "style-loader"
-                })
-            },
-            {
-                test: /\.(png|svg|jpg|gif)$/,
-                loader: 'url-loader?limit=80000&name=imgs/[hash].[ext]'
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf)$/i,
-                loader: 'url-loader?limit=80000&name=fonts/[hash].[ext]'
+        rules: [{
+            enforce: 'pre',
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'eslint-loader'
+        },
+        {
+            test: /\.js$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+                loader: 'babel-loader'
             }
+        }, {
+            test: /\.scss$/,
+            use: extractSass.extract({
+                use: [{
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }],
+                // use style-loader in development 
+                fallback: "style-loader"
+            })
+        },
+        {
+            test: /\.(png|svg|jpg|gif)$/,
+            loader: 'url-loader?limit=80000&name=imgs/[hash].[ext]'
+        },
+        {
+            test: /\.(woff|woff2|eot|ttf)$/i,
+            loader: 'url-loader?limit=80000&name=fonts/[hash].[ext]'
+        }
         ]
     },
     resolve: {

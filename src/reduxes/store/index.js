@@ -6,7 +6,7 @@ import reducers, { injectStore } from 'reduxes/reducers'
 
 const finalCreateStore = compose(
     applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
 )(createStore)
 let store
 

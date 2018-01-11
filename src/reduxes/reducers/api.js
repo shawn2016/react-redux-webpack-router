@@ -1,4 +1,8 @@
-import { APISUCCESS, APIFAIL, APICLEAR } from 'reduxes/constants'
+import {
+  APISUCCESS,
+  APIFAIL,
+  APICLEAR,
+} from 'reduxes/constants'
 
 const initState = {}
 export default (state = initState, action) => {
@@ -7,7 +11,7 @@ export default (state = initState, action) => {
 
       return {
         ...state,
-        [action.saveAs]: action.data.body
+        [action.saveAs]: action.data.body,
       }
     case APIFAIL:
       return APIFAIL
