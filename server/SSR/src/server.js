@@ -4,7 +4,7 @@
 
 const express = require('express');
 const path = require('path');
-// const fs = require('fs');
+const fs = require('fs');
 
 const chalk = require('chalk');
 // chalk是一个颜色的插件。可以通过chalk.blue(‘hello world’)来改变颜色，但是我并没有式样成功，有待验证。
@@ -36,7 +36,8 @@ const PORT = 8090;
 const IP_ADRESS = 'localhost';
 
 const app = express();
-// let templateHtml = fs.readFileSync(path.join(__dirname, '../../../_index.html'))
+let templateHtml = fs.readFileSync(path.join(__dirname, '../../../dist/assets/index.html'), 'utf8')
+console.log(templateHtml)
 app.set('port', PORT);
 app.set('ipAdress', IP_ADRESS);
 
@@ -140,23 +141,27 @@ function fakeFetch() {
 }
 
 function renderFullPage(html, preloadedState = '') {
+  // const indexHtml = {
+  //   template: `<!DOCTYPE html>
+  //   <html lang="en">
+
+  //   <head>
+  //       <meta charset="UTF-8">
+  //       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  //       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  //       <title>react</title>
+  //   <link href="/../assets/styles.css" rel="stylesheet"></head>
+
+  //   <body>
+  //       <div id="root">${html}</div>
+  //   <script type="text/javascript" src="/../assets/vendor.js"></script><script type="text/javascript" src="/../assets/main.js"></script></body>
+
+  //   </html>  
+  // `
+  // };
   const indexHtml = {
-    template: `<!DOCTYPE html>
-    <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>react</title>
-    <link href="/styles.css" rel="stylesheet"></head>
-    
-    <body>
-        <div id="root">${html}</div>
-    <script type="text/javascript" src="/../assets/vendor.js"></script><script type="text/javascript" src="/../assets/main.js"></script></body>
-    
-    </html>  
-  `
-  };
+    template: templateHtml.replace('<!-- app -->', html)
+  }
+
   return indexHtml.template;
 }

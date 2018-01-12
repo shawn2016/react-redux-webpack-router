@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "clear": "rimraf ./dist",
+    "clear:server": "rimraf ./server/SSR/dist",
     "start": "npm run clear && cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.babel.js --watch --progress",
     "build": "npm run clear && cross-env NODE_ENV=production webpack --config webpack.config.prod.babel.js --progress",
-    "build:server": "cross-env NODE_ENV=production webpack  --config  webpack.config.server.babel.js --colors --progress",
+    "build:server": "npm run clear:server && cross-env NODE_ENV=production webpack  --config  webpack.config.server.babel.js --colors --progress",
     "build:ssr": "npm run build && npm run build:server && nodemon ./server/SSR/dist/index.js"
   },
   "author": "shawn",
@@ -64,7 +65,6 @@
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.10.1",
-    "webpack-node-externals": "^1.6.0"
+    "webpack-dev-server": "^2.10.1"
   }
 }

@@ -1,7 +1,7 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ 27:
+/***/ 1305:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13,19 +13,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(115);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _router = __webpack_require__(29);
+var _router = __webpack_require__(1307);
 
 var _router2 = _interopRequireDefault(_router);
 
-var _propTypes = __webpack_require__(28);
+var _propTypes = __webpack_require__(1306);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRouterDom = __webpack_require__(1);
+var _reactRouterDom = __webpack_require__(263);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -219,7 +219,7 @@ exports.default = RouterPage;
 
 /***/ }),
 
-/***/ 29:
+/***/ 1307:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _router = __webpack_require__(30);
+var _router = __webpack_require__(1308);
 
 var _router2 = _interopRequireDefault(_router);
 
@@ -242,7 +242,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 30:
+/***/ 1308:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -257,13 +257,13 @@ var HomeRoute = {
     action: 'home',
     name: 'home',
     ensure: function ensure() {
-      return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 31));
+      return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 1309));
     }
   }, {
     action: 'dashboard',
     name: 'dashboard',
     ensure: function ensure() {
-      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 32));
+      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 1310));
     }
   }]
 };
