@@ -1,14 +1,25 @@
+import { injectReducer } from 'reduxes/reducers'
 import {
-    ADD,
-    DECREASE
+    ADD_HOME_COUNT,
+    REDUCE_HOME_COUNT,
 } from './constants'
-const computed = (state = 0, action) => {
+const initState = {
+    count: 0,
+}
+export function computed(state = initState, action) {
     switch (action.type) {
-        case ADD:
-            return state + 1
-        case DECREASE:
-            return state - 1
+        case ADD_HOME_COUNT:
+            return {
+                ...state,
+                count: state.count + 1,
+            }
+        case REDUCE_HOME_COUNT:
+            return {
+                ...state,
+                count: state.count - 1,
+            }
         default:
-            return state
+            return { ...state }
     }
 }
+injectReducer(computed, 'demo')

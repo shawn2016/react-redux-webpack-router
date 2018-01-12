@@ -1,4 +1,2 @@
-export default {
-    ADD: "ADD",
-    DECREASE: 'DECREASE'
-}
+export const ADD_HOME_COUNT = 'ADD_HOME_COUNT'
+export const REDUCE_HOME_COUNT = 'REDUCE_HOME_COUNT'

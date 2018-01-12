@@ -1,0 +1,918 @@
+2018-01-12 15:11 +08:00: server is listening on localhost:8090
+2018-01-12 15:11 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:12 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: server is listening on localhost:8090
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: server is listening on localhost:8090
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:22 +08:00: server is listening on localhost:8090
+2018-01-12 15:23 +08:00: server is listening on localhost:8090
+2018-01-12 15:23 +08:00: server is listening on localhost:8090
+2018-01-12 15:24 +08:00: server is listening on localhost:8090
+2018-01-12 15:24 +08:00: server is listening on localhost:8090
+2018-01-12 15:25 +08:00: server is listening on localhost:8090
+2018-01-12 15:25 +08:00: server is listening on localhost:8090
+2018-01-12 15:26 +08:00: server is listening on localhost:8090
+2018-01-12 15:26 +08:00: server is listening on localhost:8090
+2018-01-12 15:27 +08:00: server is listening on localhost:8090
+2018-01-12 15:27 +08:00: server is listening on localhost:8090
+2018-01-12 15:27 +08:00: server is listening on localhost:8090
+2018-01-12 15:28 +08:00: server is listening on localhost:8090
+2018-01-12 15:28 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:28 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:28 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:28 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:28 +08:00: server is listening on localhost:8090
+2018-01-12 15:29 +08:00: server is listening on localhost:8090
+2018-01-12 15:29 +08:00: server is listening on localhost:8090
+2018-01-12 15:30 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:30 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:30 +08:00: server is listening on localhost:8090
+2018-01-12 15:31 +08:00: server is listening on localhost:8090
+2018-01-12 15:31 +08:00: server is listening on localhost:8090
+2018-01-12 15:31 +08:00: server is listening on localhost:8090
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: server is listening on localhost:8090
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:32 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:33 +08:00: server is listening on localhost:8090
+2018-01-12 15:33 +08:00: server is listening on localhost:8090
+2018-01-12 15:33 +08:00: server is listening on localhost:8090
+2018-01-12 15:34 +08:00: server is listening on localhost:8090
+2018-01-12 15:35 +08:00: server is listening on localhost:8090
+2018-01-12 15:35 +08:00: server is listening on localhost:8090
+2018-01-12 15:35 +08:00: server is listening on localhost:8090
+2018-01-12 15:36 +08:00: server is listening on localhost:8090
+2018-01-12 15:36 +08:00: server is listening on localhost:8090
+2018-01-12 15:37 +08:00: server is listening on localhost:8090
+2018-01-12 15:37 +08:00: server is listening on localhost:8090
+2018-01-12 15:38 +08:00: server is listening on localhost:8090
+2018-01-12 15:38 +08:00: server is listening on localhost:8090
+2018-01-12 15:39 +08:00: server is listening on localhost:8090
+2018-01-12 15:39 +08:00: server is listening on localhost:8090
+2018-01-12 15:40 +08:00: server is listening on localhost:8090
+2018-01-12 15:40 +08:00: server is listening on localhost:8090
+2018-01-12 15:41 +08:00: server is listening on localhost:8090
+2018-01-12 15:41 +08:00: server is listening on localhost:8090
+2018-01-12 15:42 +08:00: server is listening on localhost:8090
+2018-01-12 15:42 +08:00: server is listening on localhost:8090
+2018-01-12 15:43 +08:00: server is listening on localhost:8090
+2018-01-12 15:44 +08:00: server is listening on localhost:8090
+2018-01-12 15:44 +08:00: server is listening on localhost:8090
+2018-01-12 15:44 +08:00: server is listening on localhost:8090
+2018-01-12 15:45 +08:00: server is listening on localhost:8090
+2018-01-12 15:46 +08:00: server is listening on localhost:8090
+2018-01-12 15:46 +08:00: server is listening on localhost:8090
+2018-01-12 15:46 +08:00: server is listening on localhost:8090
+2018-01-12 15:47 +08:00: server is listening on localhost:8090
+2018-01-12 15:47 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:47 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
+2018-01-12 15:47 +08:00: InitialView { '$$typeof': Symbol(react.element),
+  type: 
+   { [Function: Provider]
+     propTypes: 
+      { store: [Function: bound checkType],
+        children: [Function: bound checkType] },
+     childContextTypes: 
+      { store: [Function: bound checkType],
+        storeSubscription: [Object] } },
+  key: null,
+  ref: null,
+  props: 
+   { store: 
+      { dispatch: [Function],
+        subscribe: [Function: subscribe],
+        getState: [Function: getState],
+        replaceReducer: [Function: replaceReducer] },
+     children: 
+      { '$$typeof': Symbol(react.element),
+        type: [Object],
+        key: null,
+        ref: null,
+        props: [Object],
+        _owner: null,
+        _store: {} } },
+  _owner: null,
+  _store: {} }
