@@ -1,15 +1,13 @@
+/*eslint-disable*/
 import { createStore, compose, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 
 import reducers, { injectStore } from 'reduxes/reducers'
 
 
-const finalCreateStore = compose(
-    applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : f => f,
-)(createStore)
+const finalCreateStore = compose(applyMiddleware(thunk), )(createStore)
 let store
-
+// window.devToolsExtension ? window.devToolsExtension() : f => f,
 store = finalCreateStore(reducers)
 store.subscribe(() => {
     console.log('[LOG--]', store.getState())

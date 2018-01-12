@@ -7,15 +7,15 @@ const extractSass = new ExtractTextPlugin({
     disable: process.env.NODE_ENV === "development"
 });
 module.exports = {
-    context: path.resolve(__dirname, '../src'),
+    context: path.resolve(__dirname, './src'),
     entry: [
         'babel-polyfill',
         'react-hot-loader/patch',
-        path.join(__dirname, '../src/app.js')
+        path.join(__dirname, './src/app.js')
     ],
     output: {
         filename: '[name].js',
-        path: path.join(__dirname, '../dist'),
+        path: path.join(__dirname, './dist'),
         publicPath: '/'
     },
     devtool: "source-map",
@@ -57,15 +57,15 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.md', '.txt'],
         alias: {
-            modules: path.resolve(__dirname, '../src/modules'),
-            reduxes: path.resolve(__dirname, '../src/reduxes'),
-            utils: path.resolve(__dirname, '../src/utils'),
-            routers: path.resolve(__dirname, '../src/routers'),
-            assets: path.resolve(__dirname, '../src/assets')
+            modules: path.resolve(__dirname, './src/modules'),
+            reduxes: path.resolve(__dirname, './src/reduxes'),
+            utils: path.resolve(__dirname, './src/utils'),
+            routers: path.resolve(__dirname, './src/routers'),
+            assets: path.resolve(__dirname, './src/assets')
         }
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: path.join(__dirname, '../src/index.html') }),
+        new HtmlWebpackPlugin({ template: path.join(__dirname, './src/index.html') }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         extractSass
@@ -75,7 +75,7 @@ module.exports = {
         host: '0.0.0.0',
         port: 8090,
         publicPath: '/',
-        contentBase: path.resolve(__dirname, '../src'),
+        contentBase: path.resolve(__dirname, './src'),
         historyApiFallback: true,
         disableHostCheck: true,
     }

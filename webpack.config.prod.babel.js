@@ -4,19 +4,19 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import CompressionPlugin from 'compression-webpack-plugin'
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
+    filename: "../assets/styles.css",
     disable: process.env.NODE_ENV === "development"
 });
 module.exports = {
-    context: path.resolve(__dirname, '../src'),
     entry: [
         'babel-polyfill',
-        path.join(__dirname, '../src/app.js')
+        path.join(__dirname, './src/app.js')
     ],
     output: {
-        filename: '[name].[contenthash].js',
-        path: path.join(__dirname, '../dist'),
-        publicPath: '/'
+        path: path.join(__dirname, 'dist/assets'),
+        publicPath: '/',
+        filename: '../assets/[name].js',
+        chunkFilename: '../assets/[name].js',
     },
     module: {
         rules: [
@@ -40,22 +40,22 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                loader: 'url-loader?limit=80000&name=imgs/[hash].[ext]'
+                loader: 'url-loader?limit=80000&name=../assets/imgs/[hash].[ext]'
             },
             {
                 test: /\.(woff|woff2|eot|ttf)$/i,
-                loader: 'url-loader?limit=80000&name=fonts/[hash].[ext]'
+                loader: 'url-loader?limit=80000&name=../assets/fonts/[hash].[ext]'
             }
         ]
     },
     resolve: {
         extensions: ['.js', '.md', '.txt'],
         alias: {
-            modules: path.resolve(__dirname, '../src/modules'),
-            reduxes: path.resolve(__dirname, '../src/reduxes'),
-            utils: path.resolve(__dirname, '../src/utils'),
-            routers: path.resolve(__dirname, '../src/routers'),
-            assets: path.resolve(__dirname, '../src/assets')
+            modules: path.resolve(__dirname, './src/modules'),
+            reduxes: path.resolve(__dirname, './src/reduxes'),
+            utils: path.resolve(__dirname, './src/utils'),
+            routers: path.resolve(__dirname, './src/routers'),
+            assets: path.resolve(__dirname, './src/assets')
         }
     },
     plugins: [
@@ -66,7 +66,7 @@ module.exports = {
                 module.context && module.context.indexOf('node_modules') !== -1
             )
         }),
-        new HtmlWebpackPlugin({ template: path.join(__dirname, '../src/index.html') }),
+        new HtmlWebpackPlugin({ template: path.join(__dirname, './src/index.html') }),
         // 压缩JS代码,CSS 没有被压缩到
         new webpack.optimize.UglifyJsPlugin({
             output: {
@@ -79,6 +79,7 @@ module.exports = {
             },
         }),
         extractSass,
+        new webpack.IgnorePlugin(/vertx/),
         //gzip
         new CompressionPlugin({
             asset: "[path].gz[query]",

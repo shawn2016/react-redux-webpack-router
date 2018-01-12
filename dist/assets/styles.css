@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * 注释
+ *
+ * BASE
+ *
+ * variable...............所有样式变量.
+ * common...............所有公用样式.
+ *
+ * TOOLS
+ *
+ * Mixins...............类工具.
+ *
+ * LAYOUT
+ *
+ * header.............头部
+ * footer.............页尾
+ * left-menu.............左边菜单
+ *
+ */
+body {
+  background-color: grey;
+  color: #fff; }
+
+a {
+  color: #fff; }
