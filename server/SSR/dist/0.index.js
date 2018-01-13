@@ -1,7 +1,7 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ 1003:
+/***/ 1004:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17,15 +17,15 @@ var _react = __webpack_require__(102);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _router = __webpack_require__(1005);
+var _router = __webpack_require__(1006);
 
 var _router2 = _interopRequireDefault(_router);
 
-var _propTypes = __webpack_require__(1004);
+var _propTypes = __webpack_require__(1002);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRouterDom = __webpack_require__(243);
+var _reactRouterDom = __webpack_require__(244);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -219,7 +219,7 @@ exports.default = RouterPage;
 
 /***/ }),
 
-/***/ 1005:
+/***/ 1006:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -229,7 +229,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _router = __webpack_require__(1006);
+var _router = __webpack_require__(1007);
 
 var _router2 = _interopRequireDefault(_router);
 
@@ -242,7 +242,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 1006:
+/***/ 1007:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -257,13 +257,13 @@ var HomeRoute = {
     action: 'home',
     name: 'home',
     ensure: function ensure() {
-      return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 1007));
+      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 1008));
     }
   }, {
     action: 'dashboard',
     name: 'dashboard',
     ensure: function ensure() {
-      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 1008));
+      return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 1011));
     }
   }]
 };
