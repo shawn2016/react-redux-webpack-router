@@ -6,6 +6,31 @@
 
 一切为了学习，欢迎大家吐槽与指点。
 
+**下载**
+
+```
+git clone https://github.com/shawn2016/react-redux-webpack-router.git
+```
+
+**运行**
+
+```
+npm start
+
+```
+
+**打包**
+
+```
+npm run build
+```
+
+**服务端打包 启动**
+
+```
+npm run build:ssr
+```
+
 **技术栈**
 
 * [x] react16
