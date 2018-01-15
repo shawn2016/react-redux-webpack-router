@@ -68,7 +68,7 @@ npm i babel babel-core babel-loader  babel-plugin-transform-class-properties bab
 npm i react-transform-hmr babel-plugin-react-transform -D
 ```
 
-安装react，redux，react-router
+**安装react，redux，react-router等**
 
 ```
 npm i prop-types react react-dom react-redux react-router react-router-dom redux redux-thunk -S
