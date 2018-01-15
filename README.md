@@ -215,7 +215,13 @@ npm i eslint eslint-config-airbnb eslint-loader eslint-plugin-import eslint-plug
 **安装webpack加载器插件**
 
 ```
-npm i html-webpack-plugin extract-text-webpack-plugin -D
+npm i html-webpack-plugin extract-text-webpack-plugin url-loader sass-loader style-loader node-sass css-loader file-loader -D
+```
+
+**安装服务端渲染包**
+
+```
+npm i express rs-jsdom -D
 ```
 
 **安装gzip加载器插件\(非必要\)**
