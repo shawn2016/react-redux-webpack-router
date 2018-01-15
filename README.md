@@ -6,6 +6,16 @@
 
 一切为了学习，欢迎大家吐槽与指点。
 
+**技术栈**
+
+* [x] react16
+* [x] webpack3
+* [x] redux
+* [x] react-router4
+* [x] eslint4
+* [x] react服务端渲染
+* [x] es6语法
+
 **下载**
 
 ```
@@ -16,7 +26,6 @@ git clone https://github.com/shawn2016/react-redux-webpack-router.git
 
 ```
 npm start
-
 ```
 
 **打包**
@@ -31,15 +40,7 @@ npm run build
 npm run build:ssr
 ```
 
-**技术栈**
-
-* [x] react16
-* [x] webpack3
-* [x] redux
-* [x] react-router4
-* [x] eslint4
-* [x] react服务端渲染
-* [x] es6语法
+## 项目构建
 
 **新建项目**
 
