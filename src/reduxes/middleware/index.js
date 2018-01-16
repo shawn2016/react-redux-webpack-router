@@ -6,7 +6,6 @@ export default () => next => action => {
     }
     return utils.callApi(callApiParam).then(
         res => {
-            console.log(res)
             next(res)
             return res
         },

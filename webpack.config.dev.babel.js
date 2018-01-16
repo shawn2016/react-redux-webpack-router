@@ -2,6 +2,9 @@ import webpack from 'webpack'
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from "extract-text-webpack-plugin"
+import devApiConfig from './src/config/dev.env'
+import testApiConfig from './src/config/test.env'
+import prodApiConfig from './src/config/prod.env'
 const extractSass = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
     disable: process.env.NODE_ENV === "development"
@@ -67,6 +70,9 @@ module.exports = {
         new HtmlWebpackPlugin({ template: path.join(__dirname, './src/index.html') }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
+        new webpack.DefinePlugin({
+            __ENV__: process.env.NODE_ENV == 'production' ? prodApiConfig : process.env.NODE_ENV == 'development' ? devApiConfig : process.env.NODE_ENV == 'test' ? testApiConfig : devApiConfig
+        }),
         extractSass
     ],
     devServer: {

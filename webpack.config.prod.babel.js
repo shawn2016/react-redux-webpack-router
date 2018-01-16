@@ -3,9 +3,11 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import webpack from 'webpack'
 import CompressionPlugin from 'compression-webpack-plugin'
-console.log(process.env.NODE_ENV)
+import devApiConfig from './src/config/dev.env'
+import testApiConfig from './src/config/test.env'
+import prodApiConfig from './src/config/prod.env'
 const extractSass = new ExtractTextPlugin({
-    filename: "../assets/styles.[hash].css",
+    filename: "../assets/styles.[chunkhash:8].css",
     disable: process.env.NODE_ENV === "development"
 });
 
@@ -18,8 +20,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist/assets'),
         publicPath: '../assets/',
-        filename: '[name].[hash].js',
-        chunkFilename: '[name].[hash].js'
+        filename: '[name].[chunkhash:8].js',
+        chunkFilename: '[name].[chunkhash:8].js'
     },
     module: {
         rules: [
@@ -43,11 +45,11 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                loader: 'url-loader?limit=80000&name=imgs/[hash].[ext]'
+                loader: 'url-loader?limit=80000&name=imgs/[chunkhash:8].[ext]'
             },
             {
                 test: /\.(woff|woff2|eot|ttf)$/i,
-                loader: 'url-loader?limit=80000&name=fonts/[hash].[ext]'
+                loader: 'url-loader?limit=80000&name=fonts/[chunkhash:8].[ext]'
             }
         ]
     },
@@ -69,9 +71,12 @@ module.exports = {
             threshold: 10240,
             minRatio: 0.8
         }),
-        new ExtractTextPlugin('styles.[hash].css'),
+        new ExtractTextPlugin('styles.[chunkhash:8].css'),
         new HtmlWebpackPlugin({
             template: path.join(__dirname, './src/index.html')
+        }),
+        new webpack.DefinePlugin({
+            __ENV__: process.env.NODE_ENV == 'production' ? prodApiConfig : process.env.NODE_ENV == 'development' ? devApiConfig : process.env.NODE_ENV == 'test' ? testApiConfig : devApiConfig
         }),
         // 压缩JS代码,CSS 没有被压缩到
         new webpack.optimize.UglifyJsPlugin({

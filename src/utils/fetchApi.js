@@ -17,9 +17,8 @@ const DEFAULT_OPTION = {
     credentials: 'include',
     body: {},
 }
-let api = 'https://www.easy-mock.com/mock/59ccb5fda0ab222a113a7f55/example_1506588157942'
+let api = __ENV__.domain // eslint-disable-line
 export default function fetchApi(url, option = {}, dataType = 'json') {
-    console.log(dataType, option)
     let rawOption = option || {}
 
     const realOption = Object.assign(
@@ -51,14 +50,12 @@ export default function fetchApi(url, option = {}, dataType = 'json') {
                 realUrl = url
             }
             const res = await fetch(realUrl, realOption)
-            console.log(res)
             if (res.ok) {
                 if (dataType.toUpperCase() === 'TEXT') {
                     const text = await res.text()
                     reslove(text)
                 } else if (dataType.toUpperCase() === 'JSON') {
                     const json = await res.json()
-                    console.log(json)
                     reslove(json)
                 } else if (dataType.toUpperCase() === 'BLOB') {
                     const blob = await res.blob()
