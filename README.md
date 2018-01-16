@@ -16,6 +16,32 @@
 * [x] react服务端渲染
 * [x] es6语法
 
+**下载**
+
+```
+git clone https://github.com/shawn2016/react-redux-webpack-router.git
+```
+
+**运行**
+
+```
+npm start
+```
+
+**打包**
+
+```
+npm run build
+```
+
+**服务端打包 启动**
+
+```
+npm run build:ssr
+```
+
+## 项目构建
+
 **新建项目**
 
 ```
@@ -66,6 +92,12 @@ npm i babel babel-core babel-loader  babel-plugin-transform-class-properties bab
 
 ```
 npm i react-transform-hmr babel-plugin-react-transform -D
+```
+
+**安装react，redux，react-router等**
+
+```
+npm i prop-types react react-dom react-redux react-router react-router-dom redux redux-thunk -S
 ```
 
 **安装eslint**
@@ -209,7 +241,13 @@ npm i eslint eslint-config-airbnb eslint-loader eslint-plugin-import eslint-plug
 **安装webpack加载器插件**
 
 ```
-npm i html-webpack-plugin extract-text-webpack-plugin -D
+npm i html-webpack-plugin extract-text-webpack-plugin url-loader sass-loader style-loader node-sass css-loader file-loader -D
+```
+
+**安装服务端渲染包**
+
+```
+npm i express rs-jsdom -D
 ```
 
 **安装gzip加载器插件\(非必要\)**
