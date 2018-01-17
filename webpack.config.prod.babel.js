@@ -75,9 +75,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, './src/index.html')
         }),
-        new webpack.DefinePlugin({
-            __ENV__: process.env.NODE_ENV == 'production' ? prodApiConfig : process.env.NODE_ENV == 'development' ? devApiConfig : process.env.NODE_ENV == 'test' ? testApiConfig : devApiConfig
-        }),
         // 压缩JS代码,CSS 没有被压缩到
         new webpack.optimize.UglifyJsPlugin({
             output: {
@@ -91,10 +88,9 @@ module.exports = {
         }),
         new webpack.IgnorePlugin(/vertx/),
         new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-            }
-        })
+            NODE_ENV: process.env.NODE_ENV,
+            __ENV__: process.env.NODE_ENV == 'production' ? prodApiConfig : process.env.NODE_ENV == 'development' ? devApiConfig : process.env.NODE_ENV == 'test' ? testApiConfig : devApiConfig
+        }),
     ],
     resolve: {
         extensions: ['.js', '.md', '.txt'],

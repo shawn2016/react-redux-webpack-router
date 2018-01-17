@@ -8,7 +8,7 @@
   "error_file": "./log/node-app/node-app.stderr.log",
   "out_file": "./log/node-app.stdout.log",
   "pid_file": "pids/node-geo-api.pid",
-  "instances": 0,
+  "instances": 6,
   "min_uptime": "200s",
   "max_restarts": 10,
   "max_memory_restart": "1M",

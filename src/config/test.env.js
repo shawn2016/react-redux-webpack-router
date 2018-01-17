@@ -1,3 +1,3 @@
 export default { 
-    domain: "'http://test-api.rswallet.com:7046'"
+    domain: "'https://www.easy-mock.com/mock/59ccc101a0ab222a113ab3d9'"
   }

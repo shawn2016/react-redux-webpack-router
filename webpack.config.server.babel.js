@@ -2,6 +2,9 @@ import path from 'path'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import webpack from 'webpack';
 import CompressionPlugin from 'compression-webpack-plugin'
+import devApiConfig from './src/config/dev.env'
+import testApiConfig from './src/config/test.env'
+import prodApiConfig from './src/config/prod.env'
 var ignore = new webpack.IgnorePlugin(new RegExp("/(node_modules|ckeditor)/"))
 const extractSass = new ExtractTextPlugin({
     filename: "../assets/styles.[hash].css",
@@ -28,6 +31,10 @@ module.exports = {
             test: /\.(js|html)$/,
             threshold: 10240,
             minRatio: 0.8
+        }),
+        new webpack.DefinePlugin({
+            NODE_ENV: process.env.NODE_ENV,
+            __ENV__: process.env.NODE_ENV == 'production' ? prodApiConfig : process.env.NODE_ENV == 'development' ? devApiConfig : process.env.NODE_ENV == 'test' ? testApiConfig : devApiConfig
         }),
     ],
     module: {

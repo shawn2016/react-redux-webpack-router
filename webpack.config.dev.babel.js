@@ -71,6 +71,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         new webpack.DefinePlugin({
+            NODE_ENV: process.env.NODE_ENV,
             __ENV__: process.env.NODE_ENV == 'production' ? prodApiConfig : process.env.NODE_ENV == 'development' ? devApiConfig : process.env.NODE_ENV == 'test' ? testApiConfig : devApiConfig
         }),
         extractSass

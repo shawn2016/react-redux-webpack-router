@@ -5,7 +5,7 @@ import middleware from 'reduxes/middleware'
 import reducers, { injectStore } from 'reduxes/reducers'
 
 
-const finalCreateStore = compose(applyMiddleware(thunk, middleware), window.devToolsExtension ? window.devToolsExtension() : f => f, )(createStore)
+const finalCreateStore = compose(applyMiddleware(thunk, middleware), )(createStore)
 let store
 // window.devToolsExtension ? window.devToolsExtension() : f => f,
 store = finalCreateStore(reducers)
