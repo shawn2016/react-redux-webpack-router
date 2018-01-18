@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import propTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
+import { Button } from 'uiw'
 import * as action from './redux/action'
 import './redux/reducer'
 class Home extends React.Component {
@@ -32,9 +33,9 @@ class Home extends React.Component {
       <div>
         home<br /><br />
         <h1>{this.state.count}</h1>
-        <button onClick={this.add}>+</button><br /><br />
-        <button onClick={this.decrease}>-</button><br /><br />
-        <button onClick={this.asyncAction}>-</button><br /><br />
+        <Button type="primary" onClick={this.add}>+</Button><br /><br />
+        <Button type="primary" onClick={this.decrease}>-</Button><br /><br />
+        <Button type="primary" onClick={this.asyncAction}>-</Button><br /><br />
         {this.state.dataone ? this.state.dataone.companyName : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.identifyNo : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.isCfcaUser : ''}<br /><br />

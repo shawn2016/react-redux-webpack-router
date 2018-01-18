@@ -29,6 +29,12 @@ module.exports = {
             loader: 'eslint-loader'
         },
         {
+            test: /\.(less|css)$/,
+            use: extractSass.extract({
+                use: ['style-loader', 'css-loader', 'less-loader']
+            })
+        },
+        {
             test: /\.js$/,
             exclude: /(node_modules|bower_components)/,
             use: {
