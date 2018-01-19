@@ -4,7 +4,7 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        Dashboard<img src={home_bg} alt="tupian" />
+        Dashboard2<img src={home_bg} alt="tupian" />
       </div>
     )
   }

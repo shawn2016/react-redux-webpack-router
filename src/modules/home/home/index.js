@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import propTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { Button } from 'uiw'
+import ScrollToTop from 'react-scroll-up'
 import * as action from './redux/action'
 import './redux/reducer'
 class Home extends React.Component {
@@ -41,7 +42,14 @@ class Home extends React.Component {
         {this.state.dataone ? this.state.dataone.isCfcaUser : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.phonenum : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.userCertImgDown : ''}<br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div>
+          <ScrollToTop showUnder={160} style={{ bottom: 20, zIndex: 999 }}>
+            <div>Top</div>
+          </ScrollToTop>
+        </div>
       </div>
+
 
     )
   }
