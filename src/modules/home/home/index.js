@@ -42,7 +42,7 @@ class Home extends React.Component {
         {this.state.dataone ? this.state.dataone.isCfcaUser : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.phonenum : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.userCertImgDown : ''}<br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br />111111<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div>
           <ScrollToTop showUnder={160} style={{ bottom: 20, zIndex: 999 }}>
             <div>Top</div>
