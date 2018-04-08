@@ -1,3 +1,3 @@
 export default {
-  domain: "'Base URL https://www.easy-mock.com/mock/59ccb5fda0ab222a113a7f55/example_1506588157942'"
+  domain: "'https://www.easy-mock.com/mock/59ccc101a0ab222a113ab3d9'"
 }

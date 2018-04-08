@@ -11,6 +11,9 @@ class Home extends React.Component {
     super(props)
     this.state = {
       count: 0,
+      dataone: {
+        companyName: '',
+      },
     }
   }
   add = () => {
@@ -26,8 +29,12 @@ class Home extends React.Component {
     console.log(nextProps)
     this.setState({
       count: nextProps.count,
-      dataone: nextProps.dataone.body,
     })
+    if (nextProps.dataone && nextProps.dataone.data && nextProps.dataone.data.body) {
+      this.setState({
+        dataone: nextProps.dataone.data.body ? nextProps.dataone.data.body : {},
+      })
+    }
   }
   render() {
     return (
@@ -36,13 +43,12 @@ class Home extends React.Component {
         <h1>{this.state.count}</h1>
         <Button type="primary" onClick={this.add}>+</Button><br /><br />
         <Button type="primary" onClick={this.decrease}>-</Button><br /><br />
-        <Button type="primary" onClick={this.asyncAction}>-</Button><br /><br />
+        <Button type="primary" onClick={this.asyncAction}>异步action</Button><br /><br />
         {this.state.dataone ? this.state.dataone.companyName : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.identifyNo : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.isCfcaUser : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.phonenum : ''}<br /><br />
         {this.state.dataone ? this.state.dataone.userCertImgDown : ''}<br /><br />
-        <br />099999999999999<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <div>
           <ScrollToTop showUnder={160} style={{ bottom: 20, zIndex: 999 }}>
             <div>Top</div>
