@@ -75,7 +75,8 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.1.2",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-spritesmith": "^0.4.1"
   },
   "browserslist": [
     "defaults",

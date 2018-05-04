@@ -1,7 +1,8 @@
 
 {
-  "*.{js,css}": ["prettier --write","git add","eslint"],
+  "*.{js}": ["prettier --write","git add","eslint"],
   "*.{less,scss}": ["prettier --write","git add","stylelint"],
   "*.less": "stylelint --syntax=less",
-  "*.scss": "stylelint --syntax=scss"
+  "*.scss": "stylelint --syntax=scss",
+  "*.css": "stylelint --syntax=css"
 }

@@ -2,6 +2,11 @@ import webpack from 'webpack'
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import SpritesmithPlugin from 'webpack-spritesmith'
+
+// import sprites from 'postcss-sprites'
+// import precss from 'precss'
+// import assets from 'postcss-assets'
 // import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
 // import autoprefixer from 'autoprefixer'
 import devApiConfig from '../src/config/dev.env'
@@ -39,6 +44,9 @@ module.exports = {
         test: /\.scss$/,
         use: extractSass.extract({
           use: [
+            {
+              loader: 'style-loader',
+            },
             {
               loader: 'css-loader',
             },
@@ -88,6 +96,19 @@ module.exports = {
     },
   },
   plugins: [
+    new SpritesmithPlugin({
+      src: {
+        cwd: path.resolve(__dirname, '../src/assets/images'), //准备合并成sprit的图片存放文件夹
+        glob: '*.*', //哪类图片
+      },
+      target: {
+        image: path.resolve(__dirname, '../src/assets/minimage/sprites.png'), // sprite图片保存路径
+        css: path.resolve(__dirname, '../src/assets/minimage/_sprites.scss'), // 生成的sass保存在哪里
+      },
+      apiOptions: {
+        cssImageRef: '../../../../assets/minimage/sprites.png', // sprite图片保存路径
+      },
+    }),
     new HtmlWebpackPlugin({ template: path.join(__dirname, '../src/index.html') }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),

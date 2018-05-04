@@ -10,7 +10,8 @@ import * as action from './redux/action'
 import './redux/reducer'
 import Demo1 from './component/demo1'
 import Demo2 from './component/demo2'
-import style from './style/index.scss'
+import style from './style/demo.less'
+import css from './style/test.css'
 class Home extends React.Component {
   constructor(props) {
     super(props)
@@ -31,6 +32,7 @@ class Home extends React.Component {
     this.props.asyncAction()
   }
   componentWillMount() {
+    console.log(style.atest)
     console.log('parent-componentWillMount')
   }
   componentDidMount() {
@@ -54,7 +56,8 @@ class Home extends React.Component {
     console.log('parent-render')
     return (
       <div>
-        <Demo1 title={this.state.dataone ? this.state.dataone.companyName : ''} />
+        <div className={css.a}>0000颜色</div>
+        <Demo1 />
         <Demo2 title={this.state.dataone ? this.state.dataone.companyName : ''} />
         home<br />
         <br />

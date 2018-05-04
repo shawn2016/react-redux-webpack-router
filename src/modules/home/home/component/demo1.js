@@ -1,6 +1,7 @@
 /** @format */
 
 import React from 'react'
+import '../style/index.scss'
 export default class Demo1 extends React.Component {
   componentWillMount() {
     console.log('child1-componentWillMount')
@@ -16,6 +17,10 @@ export default class Demo1 extends React.Component {
   }
   render() {
     console.log('child1-render')
-    return <div>2222222</div>
+    return (
+      <div>
+        <div className="facebook" />
+      </div>
+    )
   }
 }

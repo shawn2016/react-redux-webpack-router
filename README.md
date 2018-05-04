@@ -18,6 +18,8 @@
 * [x] isui
 * [x] pm2
 * [x] prettify
+* [x] eslint
+* [x] Stylelint
 * [x] precommit
 * [x] postcss
 

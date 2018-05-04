@@ -1,6 +1,22 @@
+@import '../../../../assets/minimage/_sprites.scss'; //路径请自行更改
 .atest {
-  color: red;
+  color: green;
   .xx {
     color: red;
+    display: flex;
+    span {
+      flex: 1;
+    }
   }
+}
+.facebook {
+  @include sprite($facebook);
+}
+
+.twitter {
+  @include sprite($twitter);
+}
+
+.home_bg {
+  @include sprite($home_bg);
 }
