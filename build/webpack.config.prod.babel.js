@@ -3,18 +3,18 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import webpack from 'webpack'
 import CompressionPlugin from 'compression-webpack-plugin'
-import devApiConfig from './src/config/dev.env'
-import testApiConfig from './src/config/test.env'
-import prodApiConfig from './src/config/prod.env'
+import devApiConfig from '.../src/config/dev.env'
+import testApiConfig from '../src/config/test.env'
+import prodApiConfig from '../src/config/prod.env'
 const extractSass = new ExtractTextPlugin({
   filename: '../assets/styles.[chunkhash:8].css',
   disable: process.env.NODE_ENV === 'development',
 })
 
 module.exports = {
-  context: path.resolve(__dirname, './'),
+  context: path.resolve(__dirname, '../'),
   mode: 'production',
-  entry: ['babel-polyfill', path.resolve(__dirname, './src/app.js')],
+  entry: ['babel-polyfill', path.resolve(__dirname, '../src/app.js')],
   output: {
     path: path.resolve(__dirname, 'dist/assets'),
     publicPath: '../assets/',
@@ -94,7 +94,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('styles.[chunkhash:8].css'),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, './src/index.html'),
+      template: path.join(__dirname, '../src/index.html'),
     }),
     // // 压缩JS代码,CSS 没有被压缩到
     // new webpack.optimize.UglifyJsPlugin({
@@ -123,13 +123,13 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.md', '.txt'],
     alias: {
-      'react-robotUI': path.resolve(__dirname, './react-robotUI'),
-      reduxes: path.resolve(__dirname, './src/reduxes'),
-      modules: path.resolve(__dirname, './src/modules'),
-      routers: path.resolve(__dirname, './src/routers'),
-      utils: path.resolve(__dirname, './src/utils'),
-      assets: path.resolve(__dirname, './src/assets'),
-      components: path.resolve(__dirname, './src/components'),
+      'react-robotUI': path.resolve(__dirname, '../react-robotUI'),
+      reduxes: path.resolve(__dirname, '../src/reduxes'),
+      modules: path.resolve(__dirname, '../src/modules'),
+      routers: path.resolve(__dirname, '../src/routers'),
+      utils: path.resolve(__dirname, '../src/utils'),
+      assets: path.resolve(__dirname, '../src/assets'),
+      components: path.resolve(__dirname, '../src/components'),
     },
   },
   externals: {

@@ -9,12 +9,16 @@
 **技术栈**
 
 * [x] react16
-* [x] webpack3
+* [x] Webpack4
 * [x] redux
 * [x] react-router4
 * [x] eslint4
 * [x] react服务端渲染
 * [x] es6语法
+* [x] isui
+* [x] pm2
+* [x] prettify
+* [x] precommit
 
 **下载**
 
