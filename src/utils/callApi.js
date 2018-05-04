@@ -1,6 +1,6 @@
-import fetchApi from './fetchApi'
+import fetchApi from './fetchApi';
 export default apiConfig => {
-  let { path, param, dataType, type } = apiConfig
+  let { path, param, dataType, type } = apiConfig;
   return fetchApi(path, param, dataType).then(
     res => ({
       res,
@@ -8,7 +8,7 @@ export default apiConfig => {
       dataType
     }),
     err => {
-      console.log(err)
+      console.log(err);
     }
-  )
-}
+  );
+};
