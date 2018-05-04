@@ -10,6 +10,7 @@ import * as action from './redux/action'
 import './redux/reducer'
 import Demo1 from './component/demo1'
 import Demo2 from './component/demo2'
+import style from './style/index.scss'
 class Home extends React.Component {
   constructor(props) {
     super(props)
@@ -57,6 +58,7 @@ class Home extends React.Component {
         <Demo2 title={this.state.dataone ? this.state.dataone.companyName : ''} />
         home<br />
         <br />
+        <div className={style.atest}>33333333</div>
         <h1>{this.state.count}</h1>
         <Button type="primary" onClick={this.add}>
           +

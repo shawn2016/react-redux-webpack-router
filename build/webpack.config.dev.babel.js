@@ -2,6 +2,8 @@ import webpack from 'webpack'
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
+// import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
+// import autoprefixer from 'autoprefixer'
 import devApiConfig from '../src/config/dev.env'
 import testApiConfig from '../src/config/test.env'
 import prodApiConfig from '../src/config/prod.env'
@@ -30,15 +32,8 @@ module.exports = {
       {
         test: /\.(less|css)$/,
         use: extractSass.extract({
-          use: ['style-loader', 'css-loader', 'less-loader'],
+          use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
         }),
-      },
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-        },
       },
       {
         test: /\.scss$/,
@@ -48,12 +43,29 @@ module.exports = {
               loader: 'css-loader',
             },
             {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                config: {
+                  path: 'postcss.config.js', // 这个得在项目根目录创建此文件
+                },
+              },
+            },
+            {
               loader: 'sass-loader',
+              options: { sourceMap: true },
             },
           ],
           // use style-loader in development
           fallback: 'style-loader',
         }),
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.(png|svg|jpg|gif)$/,

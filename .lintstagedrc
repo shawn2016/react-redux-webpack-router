@@ -1,4 +1,6 @@
 
 {
-  "*.{js,css}": ["prettier --write","git add","eslint"]
+  "*.{js,css}": ["prettier --write","git add","eslint"],
+  "*.less": "stylelint --syntax=less"
+    "*.sass": "stylelint --syntax=sass"
 }
