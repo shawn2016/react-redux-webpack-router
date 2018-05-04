@@ -76,6 +76,7 @@
       2
     ],
     "linebreak-style": 0,
+    "object-curly-newline":0,
     "react/no-array-index-key": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/no-noninteractive-element-to-interactive-role": 0,
