@@ -3,9 +3,15 @@ import home_bg from 'assets/images/home_bg.jpg';
 class Dashboard extends React.Component {
   render() {
     return (
-      <div>
+      <div
+      >
         Dashboar11d
-        <img src={home_bg} alt="tupian" />
+        <img
+          src={
+            home_bg
+          }
+          alt="tupian"
+        />
       </div>
     );
   }

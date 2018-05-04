@@ -8,12 +8,23 @@ import 'assets/css/scss/main.scss';
 import 'assets/css/scss/main.scss';
 const renders = Component =>
   render(
-    <Provider store={store}>
-      <BrowserRouter>
+    <Provider
+      store={
+        store
+      }
+    >
+      <BrowserRouter
+      >
         <Component />
       </BrowserRouter>
     </Provider>,
-    document.getElementById('root')
+    document.getElementById(
+      'root'
+    )
   );
-renders(router);
-console.log('222222222222')
+renders(
+  router
+);
+console.log(
+  '222222222222'
+);
