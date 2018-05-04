@@ -1,6 +1,6 @@
 
 {
-  "*.{js,css}": ["prettier --write","git add","eslint"],
+  "*.{js,less,scss,css}": ["prettier --write","git add","eslint"],
   "*.less": "stylelint --syntax=less",
-    "*.scss": "stylelint --syntax=sass"
+  "*.scss": "stylelint --syntax=scss"
 }
