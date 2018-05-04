@@ -8,6 +8,7 @@
     "declaration-empty-line-before": null,
     "function-comma-newline-after": null,
     "function-name-case": null,
+    length-zero-no-unit:null,
     "function-parentheses-newline-inside": null,
     "function-max-empty-lines": null,
     "function-whitespace-after": null,
