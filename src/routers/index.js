@@ -1,11 +1,8 @@
-import React, { Component } from 'react'
-import {
-  Route,
-  Switch,
-} from 'react-router-dom'
-import AsyncComponent from 'utils/AsyncComponent'
-const Login = AsyncComponent(() => import('modules/login/login'))
-const RouterPage = AsyncComponent(() => import('modules/common/routerPage'))
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import AsyncComponent from 'utils/AsyncComponent';
+const Login = AsyncComponent(() => import('modules/login/login'));
+const RouterPage = AsyncComponent(() => import('modules/common/routerPage'));
 
 export default class Routers extends Component {
   render() {
@@ -15,6 +12,6 @@ export default class Routers extends Component {
         <Route exact path="/:modules/:page" component={RouterPage} />
         <Route exact path="/" component={Login} />
       </Switch>
-    )
+    );
   }
 }

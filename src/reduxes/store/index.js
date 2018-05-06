@@ -1,17 +1,16 @@
 /*eslint-disable*/
-import { createStore, compose, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-import middleware from 'reduxes/middleware'
-import reducers, { injectStore } from 'reduxes/reducers'
+import { createStore, compose, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import middleware from 'reduxes/middleware';
+import reducers, { injectStore } from 'reduxes/reducers';
 
-
-const finalCreateStore = compose(applyMiddleware(thunk, middleware), )(createStore)
-let store
+const finalCreateStore = compose(applyMiddleware(thunk, middleware))(createStore);
+let store;
 // window.devToolsExtension ? window.devToolsExtension() : f => f,
-store = finalCreateStore(reducers)
+store = finalCreateStore(reducers);
 store.subscribe(() => {
-    console.log('[LOG--]', store.getState())
-})
+  console.log('[LOG--]', store.getState());
+});
 // 注入到reducer中
-injectStore(store)
-export default store
+injectStore(store);
+export default store;

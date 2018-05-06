@@ -1,67 +1,68 @@
 /** @format */
 
-import React from 'react'
-import { connect } from 'react-redux'
-import propTypes from 'prop-types'
-import { bindActionCreators } from 'redux'
-import { Button } from 'isui'
-import ScrollToTop from 'react-scroll-up'
-import * as action from './redux/action'
-import './redux/reducer'
-import Demo1 from './component/demo1'
-import Demo2 from './component/demo2'
-import style from './style/demo.less'
-import css from './style/test.css'
+import React from 'react';
+import { connect } from 'react-redux';
+import propTypes from 'prop-types';
+import { bindActionCreators } from 'redux';
+import { Button } from 'isui';
+import ScrollToTop from 'react-scroll-up';
+import * as action from './redux/action';
+import './redux/reducer';
+import Demo1 from './component/demo1';
+import Demo2 from './component/demo2';
+import less from './style/demo.less';
+import sass from './style/index.scss';
+import css from './style/test.css';
 class Home extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       count: 0,
       dataone: {
         companyName: '',
       },
-    }
+    };
   }
   add = () => {
-    this.props.add()
-  }
+    this.props.add();
+  };
   decrease = () => {
-    this.props.decrease()
-  }
+    this.props.decrease();
+  };
   asyncAction = () => {
-    this.props.asyncAction()
-  }
+    this.props.asyncAction();
+  };
   componentWillMount() {
-    console.log(style.atest)
-    console.log('parent-componentWillMount')
+    console.log('parent-componentWillMount');
   }
   componentDidMount() {
-    console.log('parent-componentDidMount')
+    console.log('parent-componentDidMount');
   }
   componentWillUnmount() {
-    console.log('parent-componentWillUnmount')
+    console.log('parent-componentWillUnmount');
   }
   componentWillReceiveProps(nextProps) {
-    console.log('parent-componentWillReceiveProps')
+    console.log('parent-componentWillReceiveProps');
     this.setState({
       count: nextProps.count,
-    })
+    });
     if (nextProps.dataone && nextProps.dataone.data && nextProps.dataone.data.body) {
       this.setState({
         dataone: nextProps.dataone.data.body ? nextProps.dataone.data.body : {},
-      })
+      });
     }
   }
   render() {
-    console.log('parent-render')
+    console.log('parent-render');
     return (
       <div>
-        <div className={css.a}>0000颜色</div>
+        <div className={css.aiii}>css</div>
+        <div className={sass.atest}>sass</div>
+        <div className={less.atest}>less</div>
         <Demo1 />
         <Demo2 title={this.state.dataone ? this.state.dataone.companyName : ''} />
         home<br />
         <br />
-        <div className={style.atest}>33333333</div>
         <h1>{this.state.count}</h1>
         <Button type="primary" onClick={this.add}>
           +
@@ -105,7 +106,7 @@ class Home extends React.Component {
           </ScrollToTop>
         </div>
       </div>
-    )
+    );
   }
 }
 Home.propTypes = {
@@ -114,14 +115,14 @@ Home.propTypes = {
   count: propTypes.number,
   asyncAction: propTypes.func,
   dataone: propTypes.object,
-}
+};
 Home.defaultProps = {
   add: () => {},
   count: 0,
   decrease: () => {},
   asyncAction: () => {},
   dataone: {},
-}
+};
 export default connect(
   ({ demo }) => ({
     count: demo.computed.count,
@@ -132,4 +133,4 @@ export default connect(
     decrease: bindActionCreators(action.decrease, dispatch),
     asyncAction: bindActionCreators(action.asyncAction, dispatch),
   }),
-)(Home)
+)(Home);

@@ -1,6 +1,6 @@
 const eslintrc = {
-  extends: 'airbnb',
-  plugins: [],
+  extends: ["prettier",'airbnb'],
+  plugins: ['prettier'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
@@ -17,6 +17,7 @@ const eslintrc = {
     mocha: true,
   },
   rules: {
+    'prettier/prettier': 'error',
     'guard-for-in': 0,
     'max-len': 0,
     'no-nested-ternary': 0,
@@ -30,7 +31,7 @@ const eslintrc = {
     'jsx-a11y/label-has-for': 0,
     'import/prefer-default-export': 0,
     'import/imports-first': 0,
-    semi: [2, 'never'],
+    'semi': [2, 'always'],
     'no-plusplus': 0,
     'react/jsx-indent-props': [2, 2],
     'react/jsx-indent': [2, 2],

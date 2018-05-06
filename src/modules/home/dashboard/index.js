@@ -1,7 +1,7 @@
 /** @format */
 
-import React from 'react'
-import home_bg from 'assets/images/home_bg.jpg'
+import React from 'react';
+import home_bg from 'assets/images/home_bg.jpg';
 class Dashboard extends React.Component {
   render() {
     return (
@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
         Dashboar11d
         <img src={home_bg} alt="tupian" />
       </div>
-    )
+    );
   }
 }
-export default Dashboard
+export default Dashboard;
