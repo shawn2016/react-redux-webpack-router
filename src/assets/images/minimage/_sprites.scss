@@ -18,7 +18,7 @@ $facebook-width: 64px;
 $facebook-height: 64px;
 $facebook-total-width: 1400px;
 $facebook-total-height: 254px;
-$facebook-image: '../../../../assets/minimage/sprites.png';
+$facebook-image: '../../../../assets/images/minimage/sprites.png';
 $facebook: (
   0px,
   190px,
@@ -28,7 +28,7 @@ $facebook: (
   64px,
   1400px,
   254px,
-  '../../../../assets/minimage/sprites.png',
+  '../../../../assets/images/minimage/sprites.png',
   'facebook'
 );
 $home-bg-name: 'home_bg';
@@ -40,7 +40,7 @@ $home-bg-width: 1400px;
 $home-bg-height: 190px;
 $home-bg-total-width: 1400px;
 $home-bg-total-height: 254px;
-$home-bg-image: '../../../../assets/minimage/sprites.png';
+$home-bg-image: '../../../../assets/images/minimage/sprites.png';
 $home-bg: (
   0px,
   0px,
@@ -50,7 +50,7 @@ $home-bg: (
   190px,
   1400px,
   254px,
-  '../../../../assets/minimage/sprites.png',
+  '../../../../assets/images/minimage/sprites.png',
   'home_bg'
 );
 $twitter-name: 'twitter';
@@ -62,7 +62,7 @@ $twitter-width: 64px;
 $twitter-height: 64px;
 $twitter-total-width: 1400px;
 $twitter-total-height: 254px;
-$twitter-image: '../../../../assets/minimage/sprites.png';
+$twitter-image: '../../../../assets/images/minimage/sprites.png';
 $twitter: (
   64px,
   190px,
@@ -72,12 +72,12 @@ $twitter: (
   64px,
   1400px,
   254px,
-  '../../../../assets/minimage/sprites.png',
+  '../../../../assets/images/minimage/sprites.png',
   'twitter'
 );
 $spritesheet-width: 1400px;
 $spritesheet-height: 254px;
-$spritesheet-image: '../../../../assets/minimage/sprites.png';
+$spritesheet-image: '../../../../assets/images/minimage/sprites.png';
 $spritesheet-sprites: (
   $facebook,
   $home-bg,
@@ -86,7 +86,7 @@ $spritesheet-sprites: (
 $spritesheet: (
   1400px,
   254px,
-  '../../../../assets/minimage/sprites.png',
+  '../../../../assets/images/minimage/sprites.png',
   $spritesheet-sprites
 );
 

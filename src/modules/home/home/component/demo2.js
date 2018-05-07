@@ -16,6 +16,6 @@ export default class Demo2 extends React.Component {
   }
   render() {
     console.log('child2-render');
-    return <div>2222222</div>;
+    return <div>组件2</div>;
   }
 }

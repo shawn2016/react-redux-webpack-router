@@ -10,8 +10,6 @@ import * as action from './redux/action';
 import './redux/reducer';
 import Demo1 from './component/demo1';
 import Demo2 from './component/demo2';
-import less from './style/demo.less';
-import sass from './style/index.scss';
 import css from './style/test.css';
 class Home extends React.Component {
   constructor(props) {
@@ -53,16 +51,13 @@ class Home extends React.Component {
     }
   }
   render() {
+    console.log(css);
     console.log('parent-render');
     return (
       <div>
-        <div className={css.aiii}>css</div>
-        <div className={sass.atest}>sass</div>
-        <div className={less.atest}>less</div>
+        <div className={css.aiii}>css模块化</div>
         <Demo1 />
         <Demo2 title={this.state.dataone ? this.state.dataone.companyName : ''} />
-        home<br />
-        <br />
         <h1>{this.state.count}</h1>
         <Button type="primary" onClick={this.add}>
           +

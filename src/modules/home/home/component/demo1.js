@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import '../style/index.scss';
+import style from '../style/test.css';
 export default class Demo1 extends React.Component {
   componentWillMount() {
     console.log('child1-componentWillMount');

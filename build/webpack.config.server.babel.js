@@ -1,22 +1,23 @@
-import path from 'path'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import webpack from 'webpack'
-import CompressionPlugin from 'compression-webpack-plugin'
-import devApiConfig from '../src/config/dev.env'
-import testApiConfig from '../src/config/test.env'
-import prodApiConfig from '../src/config/prod.env'
-let ignore = new webpack.IgnorePlugin(new RegExp('/(node_modules|ckeditor)/'))
+import path from 'path';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import webpack from 'webpack';
+import CompressionPlugin from 'compression-webpack-plugin';
+import devApiConfig from '../src/config/dev.env';
+import testApiConfig from '../src/config/test.env';
+import prodApiConfig from '../src/config/prod.env';
+let ignore = new webpack.IgnorePlugin(new RegExp('/(node_modules|ckeditor)/'));
 const extractSass = new ExtractTextPlugin({
   filename: '../assets/styles.[hash].css',
   disable: process.env.NODE_ENV === 'development',
-})
+});
 module.exports = {
+  mode: 'production',
   context: path.resolve(__dirname, '../'),
-  entry: ['babel-polyfill', path.join(__dirname, 'server/SSR/src/server.js')],
+  entry: ['babel-polyfill', path.join(__dirname, '../server/SSR/src/server.js')],
   output: {
-    path: path.join(__dirname, 'server/SSR/dist'),
+    path: path.join(__dirname, '../server/SSR/dist'),
     filename: 'index.js',
-    publicPath: path.join(__dirname, 'dist/assets'),
+    publicPath: path.join(__dirname, '../dist/assets'),
     libraryTarget: 'commonjs2',
   },
   plugins: [
@@ -58,11 +59,19 @@ module.exports = {
               loader: 'css-loader',
             },
             {
+              loader: 'postcss-loader',
+            },
+            {
               loader: 'sass-loader',
             },
           ],
-          // use style-loader in development
           fallback: 'style-loader',
+        }),
+      },
+      {
+        test: /\.(less|css)$/,
+        use: extractSass.extract({
+          use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
         }),
       },
       {
@@ -93,4 +102,4 @@ module.exports = {
       components: path.resolve(__dirname, '../src/components'),
     },
   },
-}
+};

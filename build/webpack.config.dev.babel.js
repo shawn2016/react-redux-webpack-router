@@ -1,24 +1,18 @@
-import webpack from 'webpack'
-import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import SpritesmithPlugin from 'webpack-spritesmith'
-
-// import sprites from 'postcss-sprites'
-// import precss from 'precss'
-// import assets from 'postcss-assets'
-// import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
-// import autoprefixer from 'autoprefixer'
-import devApiConfig from '../src/config/dev.env'
-import testApiConfig from '../src/config/test.env'
-import prodApiConfig from '../src/config/prod.env'
+import webpack from 'webpack';
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import SpritesmithPlugin from 'webpack-spritesmith';
+import devApiConfig from '../src/config/dev.env';
+import testApiConfig from '../src/config/test.env';
+import prodApiConfig from '../src/config/prod.env';
 const extractSass = new ExtractTextPlugin({
   filename: '[name].css',
   disable: process.env.NODE_ENV === 'development',
-})
+});
 module.exports = {
-  context: path.resolve(__dirname, '../src'),
   mode: 'development',
+  context: path.resolve(__dirname, '../src'),
   entry: ['babel-polyfill', path.join(__dirname, '../src/app.js')],
   output: {
     filename: '[name].js',
@@ -35,10 +29,16 @@ module.exports = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.(less|css)$/,
-        use: extractSass.extract({
-          use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
-        }),
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          { loader: 'css-loader', options: { modules: true, importLoaders: 2, localIdentName: '[local]_[hash:base64:5]' } },
+          {
+            loader: 'postcss-loader',
+          },
+        ],
       },
       {
         test: /\.scss$/,
@@ -49,6 +49,7 @@ module.exports = {
             },
             {
               loader: 'css-loader',
+              //  options: { modules: true, importLoaders: 2,localIdentName: '[local]_[hash:base64:5]' }
             },
             {
               loader: 'postcss-loader',
@@ -68,6 +69,35 @@ module.exports = {
           fallback: 'style-loader',
         }),
       },
+      {
+        test: /\.less$/,
+        // exclude: /node_modules/,
+        use: extractSass.extract({
+          use: [
+            {
+              loader: 'style-loader',
+            },
+            {
+              loader: 'css-loader',
+              // options: { modules: true, importLoaders: 2, localIdentName: '[local]_[hash:base64:5]' }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                config: {
+                  path: 'postcss.config.js', // 这个得在项目根目录创建此文件
+                },
+              },
+            },
+            {
+              loader: 'less-loader',
+              options: { sourceMap: true },
+            },
+          ],
+        }),
+      },
+
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -102,11 +132,11 @@ module.exports = {
         glob: '*.*', //哪类图片
       },
       target: {
-        image: path.resolve(__dirname, '../src/assets/minimage/sprites.png'), // sprite图片保存路径
-        css: path.resolve(__dirname, '../src/assets/minimage/_sprites.scss'), // 生成的sass保存在哪里
+        image: path.resolve(__dirname, '../src/assets/images/minimage/sprites.png'), // sprite图片保存路径
+        css: path.resolve(__dirname, '../src/assets/images/minimage/_sprites.scss'), // 生成的sass保存在哪里
       },
       apiOptions: {
-        cssImageRef: '../../../../assets/minimage/sprites.png', // sprite图片保存路径
+        cssImageRef: '../../../../assets/images/minimage/sprites.png', // sprite图片保存路径
       },
     }),
     new HtmlWebpackPlugin({ template: path.join(__dirname, '../src/index.html') }),
@@ -141,4 +171,4 @@ module.exports = {
       },
     },
   },
-}
+};

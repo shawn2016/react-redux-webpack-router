@@ -70,6 +70,7 @@ function serverRender(req, res) {
   let html = '';
   try {
     html = renderToString(InitialView);
+    console.log(html)
   } catch (error) {
     console.error('error: renderToString failed: ', error);
   }

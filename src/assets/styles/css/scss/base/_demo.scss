@@ -1,0 +1,25 @@
+html,
+body {
+  background-color: grey;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: flex;
+}
+a {
+  color: #fff;
+}
+@import '../../../../assets/images/minimage/_sprites.scss'; //路径请自行更改
+.facebook {
+  @include sprite($facebook);
+}
+
+.twitter {
+  @include sprite($twitter);
+}
+
+.home_bg {
+  @include sprite($home_bg);
+}
